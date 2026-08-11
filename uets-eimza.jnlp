@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="https://api.etebligat.gov.tr/v1/auth/_eimza/"  href="uets-eimza.jnlp">
+	
+    <information>
+        <title>PTT UETS E-Imza Uygulaması</title>
+        <vendor>PTT</vendor>
+        <homepage href="https://api.etebligat.gov.tr/v1/auth/_eimza/"/>
+        <description>PTT UETS E-Imza Uygulaması</description>
+        <icon href="logo.png"/>
+        <icon kind="splash" href="logo.png"/>
+        <offline-allowed/>
+        <shortcut online="true">
+            <desktop/>
+            <menu submenu="PTT UETS E-Imza Uygulaması"/>
+        </shortcut>
+
+    </information>
+
+    <security>
+        <all-permissions />
+    </security>
+
+    <resources>
+        <j2se version="1.7+" href="http://java.sun.com/products/autodl/j2se" />
+        <jar href="uets-eimza.jar" main="true" version="1.1.60" />
+        <property name="jnlp.versionEnabled" value="true" />
+        <property name="jnlp.packEnabled" value="false" />
+        <property name="jnlp.config" value="https://api.etebligat.gov.tr/v1/auth/_eimza/config.properties" />
+        <property name="jnlp.user.language" value="tr" />
+        <property name="jnlp.user.country" value="TR" />
+    </resources>
+	
+    <application-desc name="PTT UETS E-Imza Uygulaması" main-class="tr.gov.ptt.kep.digitalsignature.swing.FrmApplet">
+    </application-desc>
+	
+    <update check="always" policy="always"/>
+	
+</jnlp>
